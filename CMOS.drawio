@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-21T14:23:08.154Z" agent="5.0 (Macintosh)" etag="s6t0BBqMrvBcy9nR4q21" version="15.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-21T14:23:31.190Z" agent="5.0 (Macintosh)" etag="PJr-SrXV1Wf3ysqKEoO7" version="15.8.2" type="github">
   <diagram id="MNUqCONsUpe-TebcX_Py" name="Page-1">
     <mxGraphModel dx="1892" dy="1224" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="t5AtAjVldFoCVjbBlI82-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="550" y="730" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="t5AtAjVldFoCVjbBlI82-10" value="Couchbase Monitoring and Observability Stack (CMOS)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="t5AtAjVldFoCVjbBlI82-10" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Couchbase Monitoring and Observability Stack (CMOS)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="480" y="30" width="280" height="20" as="geometry" />
         </mxCell>
         <mxCell id="R16O8NXebToeCa1PSR8T-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://raw.githubusercontent.com/grafana/grafana/main/docs/logo-horizontal.png;" parent="1" vertex="1">
