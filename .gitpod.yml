@@ -1,4 +1,4 @@
-image: europe-docker.pkg.dev/gitpod-artifacts/docker-dev/workspace-base-images:full
+#image: europe-docker.pkg.dev/gitpod-artifacts/docker-dev/workspace-base-images:full
 tasks:
   - init: |
       go version
