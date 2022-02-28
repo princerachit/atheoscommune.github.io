@@ -14,32 +14,32 @@ jobs:
         with:
           add-labels: "team: workspace"
 
-      - name: Get project data
-        env:
-          GITHUB_TOKEN: ${{ secrets.TEST }}
-          ORGANIZATION: princerachit
-          PROJECT_NUMBER: 1
-        run: |
-          gh api graphql -f query='
-            query($org: String!, $number: Int!) {
-              organization(login: $org){
-                id
-                projectNext(number: $number) {
-                  id
-                  fields(first:20) {
-                    nodes {
-                      id
-                      name
-                      settings
-                    }
-                  }
-                }
-              }
-            }' -f org=$ORGANIZATION -F number=$PROJECT_NUMBER > project_data.json
+      # - name: Get project data
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.TEST }}
+      #     ORGANIZATION: princerachit
+      #     PROJECT_NUMBER: 1
+      #   run: |
+      #     gh api graphql -f query='
+      #       query($org: String!, $number: Int!) {
+      #         organization(login: $org){
+      #           id
+      #           projectNext(number: $number) {
+      #             id
+      #             fields(first:20) {
+      #               nodes {
+      #                 id
+      #                 name
+      #                 settings
+      #               }
+      #             }
+      #           }
+      #         }
+      #       }' -f org=$ORGANIZATION -F number=$PROJECT_NUMBER > project_data.json
 
-          echo 'PROJECT_ID='$(jq '.data.organization.projectNext.id' project_data.json) >> $GITHUB_ENV
-          echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectNext.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
-          echo 'IN_PROGRESS_OPTION_ID='$(jq '.data.organization.projectNext.fields.nodes[] | select(.name== "Status") |.settings | fromjson.options[] | select(.name=="In Progress") |.id' project_data.json) >> $GITHUB_ENV
+      #     echo 'PROJECT_ID='$(jq '.data.organization.projectNext.id' project_data.json) >> $GITHUB_ENV
+      #     echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectNext.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
+      #     echo 'IN_PROGRESS_OPTION_ID='$(jq '.data.organization.projectNext.fields.nodes[] | select(.name== "Status") |.settings | fromjson.options[] | select(.name=="In Progress") |.id' project_data.json) >> $GITHUB_ENV
 
       # - name: Add PR to project
       #   if: github.event_name == 'pull_request' && !github.event.pull_request.draft
