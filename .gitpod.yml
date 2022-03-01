@@ -1,6 +1,1 @@
-tasks:
-  - init: |
-      go version
-vscode:
-  extensions:
-    - golang.go
+image: gitpod/workspace-gecko:latest
