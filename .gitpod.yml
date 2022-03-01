@@ -1,1 +1,1 @@
-image: gitpod/workspace-full:latest
+image: gitpod/workspace-flutter:latest
