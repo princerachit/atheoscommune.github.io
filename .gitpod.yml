@@ -1,4 +1,4 @@
-image: gitpod/workspace-full:latest
+image: gitpod/workspace-full:2022-03-07-07-58-04
 vscode:
   extensions:
     - bradlc.vscode-tailwindcss
