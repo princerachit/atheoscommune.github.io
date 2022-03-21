@@ -1,1 +1,2 @@
-image: europe-docker.pkg.dev/prince-tf-experiments/dazzle/workspace-images:base
+image:
+  file: .gitpod.Dockerfile
