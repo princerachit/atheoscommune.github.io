@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
+image: europe-docker.pkg.dev/gitpod-artifacts/docker-dev/workspace-dotnet-vnc:2022-02-28-07-30-13
 vscode:
   extensions:
     - bradlc.vscode-tailwindcss
