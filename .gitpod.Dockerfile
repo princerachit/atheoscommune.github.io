@@ -1,3 +1,3 @@
-FROM gitpod/workspace-base:latest
+FROM nginx:latest
 
 RUN touch /tmp/myfile
