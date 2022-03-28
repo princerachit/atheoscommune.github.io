@@ -1,3 +1,3 @@
 FROM redis:latest
 
-RUN touch /tmp/myfile
+RUN touch /tmp/myfilew
